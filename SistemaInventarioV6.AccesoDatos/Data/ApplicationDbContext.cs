@@ -16,6 +16,7 @@ namespace SistemaInventarioV6.AccesoDatos.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            // permite aplicar automáticamente las configuraciones de entidades definidas en el ensamblado actual utilizando reflexión.
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
